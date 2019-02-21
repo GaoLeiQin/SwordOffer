@@ -7,7 +7,7 @@ import org.junit.Test;
  * 输入二叉树的前序遍历和中序遍历结果,重建该二叉树.
  *
  * @author qgl
- * @date 2019/02/17
+ * @date 2019/02/20
  */
 public class Test6 {
     @Test
