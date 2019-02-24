@@ -11,7 +11,7 @@ import org.junit.Test;
  */
 public class Test10 {
     @Test
-    public void test9() throws Exception {
+    public void test10() throws Exception {
         int number = 7;
         System.out.println(number + " 的二进制表示中1的个数：" + NumberOfBin10.numberOfBin(number));
     }

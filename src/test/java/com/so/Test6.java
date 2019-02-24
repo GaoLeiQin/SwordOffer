@@ -11,7 +11,7 @@ import org.junit.Test;
  */
 public class Test6 {
     @Test
-    public void test3() {
+    public void test6() {
         // 前序遍历结果
         int[] pre = {1, 2, 4, 7, 3, 5, 6, 8};
         // 中序遍历结果

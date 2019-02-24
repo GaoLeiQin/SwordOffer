@@ -14,7 +14,7 @@ import java.util.Arrays;
  */
 public class Test5 {
     @Test
-    public void test4() {
+    public void test5() {
         int[] beforeList = {3, 6, 9};
         ListNode node1 = new ListNode();
         ListNode node2 = new ListNode();

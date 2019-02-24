@@ -7,7 +7,7 @@ import java.util.Arrays;
  * 输入二叉树的前序遍历和中序遍历结果,重建该二叉树。
  *
  * @author qgl
- * @since 2017/08/09
+ * @date 2017/08/09
  */
 public class BinaryTreeSearch6 {
 

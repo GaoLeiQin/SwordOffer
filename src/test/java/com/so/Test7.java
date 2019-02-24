@@ -11,7 +11,7 @@ import org.junit.Test;
  */
 public class Test7 {
     @Test
-    public void test3() throws Exception {
+    public void test7() throws Exception {
         DoubleSQueue7.appendTail(3);
         DoubleSQueue7.appendTail(5);
         DoubleSQueue7.appendTail(6);

@@ -7,7 +7,7 @@ import java.util.Stack;
  * 用两个栈来实现一个队列，完成队列的Push和Pop操作。 队列中的元素为int类型。
  *
  * @author qgl
- * @since 2017/08/09
+ * @date 2017/08/09
  */
 public class DoubleSQueue7 {
 

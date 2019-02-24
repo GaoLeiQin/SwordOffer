@@ -12,7 +12,7 @@ import org.junit.Test;
 public class Test8 {
     @Test
     public void test8() throws Exception {
-        int[] array = {6,7,9,1,3,5,5};
+        int[] array = {6, 7, 9, 1, 3, 5, 5};
         System.out.println("旋转数组的最小元素：" + MinNumber8.minInReversingList(array));
     }
 }
