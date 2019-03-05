@@ -3,8 +3,8 @@ package com.so;
 import org.junit.Test;
 
 /**
- * 第18题
- * 判断二叉树A中是否包含子树B
+ * 第19题
+ * 输入一个二叉树，输出它的镜像
  *
  * @author qgl
  * @date 2019/03/05
