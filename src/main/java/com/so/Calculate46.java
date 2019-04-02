@@ -1,8 +1,5 @@
 package com.so;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-
 /**
  * 第46题
  * 求1+2+...+n，不能使用乘除法，循环等

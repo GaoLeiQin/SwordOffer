@@ -7,7 +7,7 @@ import org.junit.Test;
  * 求1+2+...+n，不能使用乘除法，循环等
  *
  * @author qgl
- * @date 2019/03/31
+ * @date 2019/04/01
  */
 public class Test46 {
     @Test
