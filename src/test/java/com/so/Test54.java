@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * 第53题
+ * 第54题
  * 判断字符串是否表示数值（包括整数和小数）
  *
  * @author qgl
