@@ -10,3 +10,4 @@
 |:-----|:----|:----|
 |第三题|[二维数组中查找目标值](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindNumber3.java)|[测试3](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test3.java)|
 |第四题|[替换字符串中的空格](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/ReplaceBlank4.java)|[测试4](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test4.java)|
+|第五题|[从尾到头打印链表](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/PrintListReversing5.java)|[测试5](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test5.java)|
