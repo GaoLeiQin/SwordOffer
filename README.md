@@ -11,3 +11,4 @@
 |第三题|[二维数组中查找目标值](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindNumber3.java)|[测试3](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test3.java)|
 |第四题|[替换字符串中的空格](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/ReplaceBlank4.java)|[测试4](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test4.java)|
 |第五题|[从尾到头打印链表](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/PrintListReversing5.java)|[测试5](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test5.java)|
+|第六题|[由前序和中序遍历重建二叉树](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/BinaryTreeSearch6.java)|[测试6](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test6.java)|
