@@ -12,3 +12,4 @@
 |第四题|[替换字符串中的空格](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/ReplaceBlank4.java)|[测试4](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test4.java)|
 |第五题|[从尾到头打印链表](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/PrintListReversing5.java)|[测试5](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test5.java)|
 |第六题|[由前序和中序遍历重建二叉树](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/BinaryTreeSearch6.java)|[测试6](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test6.java)|
+|第七题|[用两个栈实现队列](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/DoubleSQueue7.java)|[测试7](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test7.java)|
