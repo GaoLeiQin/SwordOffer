@@ -14,3 +14,4 @@
 |第六题|[由前序和中序遍历重建二叉树](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/BinaryTreeSearch6.java)|[测试6](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test6.java)|
 |第七题|[用两个栈实现队列](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/DoubleSQueue7.java)|[测试7](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test7.java)|
 |第八题|[求旋转数组的最小数字](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/MinNumber8.java)|[测试8](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test8.java)|
+|第九题|[斐波那契数列的第n项（青蛙跳台阶）](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/Fibonacci9.java)|[测试9](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test9.java)|
