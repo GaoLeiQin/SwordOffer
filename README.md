@@ -18,4 +18,5 @@
 |第十题|[二进制中1的个数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/NumberOfBin10.java)|[测试10](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test10.java)|
 |第十一题|[数值的整数次方](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/Power11.java)|[测试11](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test11.java)|
 |第十二题|[打印1到最大的n位数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/PrintToMaxOfNDigits12.java)|[测试12](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test12.java)|
+|第十三题|[O(1)时间删除链表节点](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/DeleteNode13.java)|[测试13](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test13.java)|
 
