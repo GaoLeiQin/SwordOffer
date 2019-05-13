@@ -23,4 +23,5 @@
 |第十五题|[找链表中倒数第K个节点](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindKthToTail15.java)|[测试15](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test15.java)|
 |第十六题|[输出反转后的链表](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/ReverseList16.java)|[测试16](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test16.java)|
 |第十七题|[合并两个有序链表](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/MergeLinked17.java)|[测试17](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test17.java)|
+|第十八题|[判断二叉树A中是否包含子树B](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/DoesTreeHave18.java)|[测试18](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test18.java)|
 
