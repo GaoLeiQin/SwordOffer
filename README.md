@@ -25,4 +25,5 @@
 |第十七题|[合并两个有序链表](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/MergeLinked17.java)|[测试17](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test17.java)|
 |第十八题|[判断二叉树A中是否包含子树B](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/DoesTreeHave18.java)|[测试18](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test18.java)|
 |第十九题|[二叉树的镜像](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/MirrorRecursively19.java)|[测试19](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test19.java)|
+|第二十题|[顺时针打印矩阵](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/PrintMatrixInCircle20.java)|[测试20](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test20.java)|
 
