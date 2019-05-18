@@ -28,5 +28,6 @@
 |第二十题|[顺时针打印矩阵](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/PrintMatrixInCircle20.java)|[测试20](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test20.java)|
 |第二十一题|[包含min函数的栈](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/StackWithMin21.java)|[测试21](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test21.java)|
 |第二十二题|[判断一个栈是否是另一个栈的弹出序列](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/IsPopOrder22.java)|[测试22](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test22.java)|
+|第二十三题|[层序遍历二叉树](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/PrintFromTopToBottom23.java)|[测试23](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test23.java)|
 
 
