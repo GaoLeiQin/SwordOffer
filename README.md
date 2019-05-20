@@ -30,5 +30,6 @@
 |第二十二题|[判断一个栈是否是另一个栈的弹出序列](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/IsPopOrder22.java)|[测试22](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test22.java)|
 |第二十三题|[层序遍历二叉树](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/PrintFromTopToBottom23.java)|[测试23](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test23.java)|
 |第二十四题|[后序遍历二叉搜索树](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/VerifySequerceOfBST24.java)|[测试24](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test24.java)|
+|第二十五题|[二叉树中和为某值的路径](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindPath25.java)|[测试25](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test25.java)|
 
 
