@@ -33,5 +33,5 @@
 |第二十五题|[二叉树中和为某值的路径](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindPath25.java)|[测试25](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test25.java)|
 |第二十六题|[复杂链表的复制](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/CloneCLinkedList26.java)|[测试26](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test26.java)|
 |第二十七题|[二叉搜索树转换为双向链表](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/BinaryToLinked27.java)|[测试27](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test27.java)|
-
+|第二十八题|[打印字符串中所有字符的排列](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/Permutation28.java)|[测试28](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test28.java)|
 
