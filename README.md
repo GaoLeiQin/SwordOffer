@@ -36,4 +36,5 @@
 |第二十八题|[打印字符串中所有字符的排列](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/Permutation28.java)|[测试28](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test28.java)|
 |第二十九题|[数组中出现次数超过一半的数字](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/MoreThanHalfNum29.java)|[测试29](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test29.java)|
 |第三十题|[找出最小的K个数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/GetLeastNumbers30.java)|[测试30](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test30.java)|
+|第三十一题|[连续子数组的最大和](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindGreatestSum31.java)|[测试31](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test31.java)|
 
