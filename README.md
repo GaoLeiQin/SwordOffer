@@ -38,4 +38,4 @@
 |第三十题|[找出最小的K个数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/GetLeastNumbers30.java)|[测试30](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test30.java)|
 |第三十一题|[连续子数组的最大和](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindGreatestSum31.java)|[测试31](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test31.java)|
 |第三十二题|[从1到整数n中1出现的次数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/NumberOf1Bw32.java)|[测试32](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test32.java)|
-
+|第三十三题|[把数组中的数排成一个最小的数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/PrintMinNumber33.java)|[测试33](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test33.java)|
