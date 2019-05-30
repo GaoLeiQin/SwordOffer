@@ -41,3 +41,4 @@
 |第三十三题|[把数组中的数排成一个最小的数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/PrintMinNumber33.java)|[测试33](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test33.java)|
 |第三十四题|[求第N个丑数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/UglyNumber34.java)|[测试34](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test34.java)|
 |第三十五题|[第一个出现一次的字符](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FirstNotRepeating35.java)|[测试35](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test35.java)|
+|第三十六题|[数组中逆序对的个数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/InversePairs36.java)|[测试36](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test36.java)|
