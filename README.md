@@ -40,4 +40,4 @@
 |第三十二题|[从1到整数n中1出现的次数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/NumberOf1Bw32.java)|[测试32](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test32.java)|
 |第三十三题|[把数组中的数排成一个最小的数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/PrintMinNumber33.java)|[测试33](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test33.java)|
 |第三十四题|[求第N个丑数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/UglyNumber34.java)|[测试34](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test34.java)|
-
+|第三十五题|[第一个出现一次的字符](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FirstNotRepeating35.java)|[测试35](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test35.java)|
