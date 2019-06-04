@@ -44,3 +44,4 @@
 |第三十六题|[数组中逆序对的个数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/InversePairs36.java)|[测试36](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test36.java)|
 |第三十七题|[两个链表的第一个公共节点](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindFirstCommonNode37.java)|[测试37](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test37.java)|
 |第三十八题|[数字在排序数组中出现的次数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/GetNumberOfK38.java)|[测试38](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test38.java)|
+|第三十九题|[二叉树的深度](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/TreePath39.java)|[测试39](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test39.java)|
