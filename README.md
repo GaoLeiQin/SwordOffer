@@ -46,3 +46,4 @@
 |第三十八题|[数字在排序数组中出现的次数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/GetNumberOfK38.java)|[测试38](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test38.java)|
 |第三十九题|[二叉树的深度](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/TreePath39.java)|[测试39](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test39.java)|
 |第四十题|[数组中只出现一次的两个数，而其他数都出现两次](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindNumAppearOnce40.java)|[测试40](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test40.java)|
+|第四十一题|[和为s的连续整数序列](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindNumbersWithSum41.java)|[测试41](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test41.java)|
