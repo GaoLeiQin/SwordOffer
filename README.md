@@ -48,3 +48,4 @@
 |第四十题|[数组中只出现一次的两个数，而其他数都出现两次](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindNumAppearOnce40.java)|[测试40](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test40.java)|
 |第四十一题|[和为s的连续整数序列](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FindNumbersWithSum41.java)|[测试41](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test41.java)|
 |第四十二题|[翻转字符串](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/ReverseSentence42.java)|[测试42](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test42.java)|
+|第四十三题|[n个骰子的点数及出现的概率](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/DicesProbability43.java)|[测试43](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test43.java)|
