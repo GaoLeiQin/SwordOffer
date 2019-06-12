@@ -51,3 +51,4 @@
 |第四十三题|[n个骰子的点数及出现的概率](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/DicesProbability43.java)|[测试43](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test43.java)|
 |第四十四题|[扑克牌的顺子](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/IsContinuous44.java)|[测试44](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test44.java)|
 |第四十五题|[圆圈中最后剩下的数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/LastRemaining45.java)|[测试45](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test45.java)|
+|第四十六题|[1+2+3+...+n的和](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/Calculate46.java)|[测试46](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test46.java)|
