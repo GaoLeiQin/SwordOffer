@@ -53,3 +53,4 @@
 |第四十五题|[圆圈中最后剩下的数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/LastRemaining45.java)|[测试45](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test45.java)|
 |第四十六题|[1+2+3+...+n的和](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/Calculate46.java)|[测试46](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test46.java)|
 |第四十七题|[不用加减乘除做加法](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/Add47.java)|[测试47](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test47.java)|
+|第四十八题|[不能被继承的类](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FinalClass48.java)|[测试48](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test48.java)|
