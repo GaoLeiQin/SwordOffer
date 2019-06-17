@@ -55,3 +55,4 @@
 |第四十七题|[不用加减乘除做加法](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/Add47.java)|[测试47](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test47.java)|
 |第四十八题|[不能被继承的类](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FinalClass48.java)|[测试48](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test48.java)|
 |第四十九题|[字符串转换为整数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/StrToInt49.java)|[测试49](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test49.java)|
+|第五十题|[树中两个节点的最低公共祖先](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/MinCParent50.java)|[测试50](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test50.java)|
