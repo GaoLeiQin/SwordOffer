@@ -59,3 +59,4 @@
 |第五十一题|[找出重复的数](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/Duplicate51.java)|[测试51](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test51.java)|
 |第五十二题|[构建乘积数组](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/MultiplyArray52.java)|[测试52](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test52.java)|
 |第五十三题|[正则表达式匹配](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/RegularMatch53.java)|[测试53](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test53.java)|
+|第五十四题|[表示数值的字符串](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/IsNumber54.java)|[测试54](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test54.java)|
