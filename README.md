@@ -64,3 +64,4 @@
 |第五十五题|[字符流中第一个不重复的字符](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/FirstAppearingOnce55.java)|[测试55](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test55.java)|
 |第五十六题|[链表中环的入口节点](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/EnterLoop56.java)|[测试56](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test56.java)|
 |第五十七题|[删除链表中重复的节点](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/DeleteDuplication57.java)|[测试57](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test57.java)|
+|第五十八题|[二叉树的下一个节点](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/NextTreeNode58.java)|[测试58](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test58.java)|
