@@ -3,7 +3,7 @@ package com.so;
 import org.junit.Test;
 
 /**
- * 第16题
+ * 第16题 反转链表
  * 输入一个链表的头结点，反转该链表并输出翻转后的头结点
  *
  * @author qgl
@@ -26,5 +26,6 @@ public class Test16 {
 
         System.out.println("解法一：" + ReverseList16.reverseList1(head).data);
 //        System.out.println("解法二：" + ReverseList16.reverseList2(head).data);
+//        System.out.println("解法三：" + ReverseList16.reverseList3(head).data);
     }
 }
