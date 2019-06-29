@@ -67,3 +67,4 @@
 |第五十八题|[二叉树的下一个节点](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/NextTreeNode58.java)|[测试58](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test58.java)|
 |第五十九题|[对称的二叉树](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/IsSymmetrical59.java)|[测试59](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test59.java)|
 |第六十题|[按之字形顺序打印二叉树](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/ZTreePrint60.java)|[测试60](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test60.java)|
+|第六十一题|[把二叉树打印成多行](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/main/java/com/so/LevelPrintTree61.java)|[测试61](https://github.com/GaoLeiQin/SwordOffer/blob/master/src/test/java/com/so/Test61.java)|
