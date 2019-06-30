@@ -11,13 +11,15 @@ package com.so;
 public class FindNumber3 {
 
     /**
-     * 解法一：两个指针
+     * 解法一：双指针
+     * 时间复杂度：O(mn)，空间复杂度：O(1)
+     *
      * @param array
      * @param target
      * @return
      */
     public static boolean find(int[][] array, int target) {
-        if (array == null) {
+        if (array == null || array.length == 0) {
             return false;
         }
         int row = 0;
@@ -38,28 +40,34 @@ public class FindNumber3 {
 
     /**
      * 解法二：二分法
-     * @param target
+     * 时间复杂度：O(log mn)，空间复杂度：O(1)
+     *
      * @param array
+     * @param target
      * @return
      */
-    public static boolean find(int target, int[][] array) {
-        if (array == null) {
+    public boolean find2(int[][] array, int target) {
+        if (array == null || array.length == 0) {
             return false;
         }
 
-        for (int i = 0; i < array.length; i++) {
-            int left = 0;
-            int right = array[i].length - 1;
-            while (left <= right) {
-                int mid = (left + right) / 2;
-                if (target > array[i][mid])
-                    left = mid + 1;
-                else if (target < array[i][mid])
-                    right = mid - 1;
-                else
-                    return true;
+        int left = 0;
+        int right = array.length * array[0].length - 1;
+        int col = array[0].length;
+
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            int value = array[mid / col][mid % col];
+
+            if (value == target) {
+                return true;
+            } else if (value < target) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
             }
         }
+
         return false;
     }
 }
