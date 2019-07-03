@@ -2,6 +2,8 @@ package com.so;
 
 import java.util.Arrays;
 
+import com.so.Common.TreeNode;
+
 /**
  * 第6题
  * 输入二叉树的前序遍历和中序遍历结果,重建该二叉树。
@@ -12,59 +14,59 @@ import java.util.Arrays;
 public class BinaryTreeSearch6 {
 
     /**
-     * 二叉树节点
-     */
-    static class BinaryTreeNode {
-        public int value;
-        public BinaryTreeNode leftNode;
-        public BinaryTreeNode rightNode;
-    }
-
-    /**
-     * 重建二叉树
-     * @param preOrder
-     * @param inorder
+     * 解法一：递归（传入数组的拷贝）
+     * 时间复杂度：O(n)，空间复杂度：O(n)
+     *
+     * @param pre
+     * @param in
      * @return
      */
-    public static BinaryTreeNode reConstructBinaryTree(int[] preOrder, int[] inorder) {
-        if (preOrder == null || inorder == null) {
+    public static TreeNode reConstructBinaryTree(int[] pre, int[] in) {
+        if (pre == null || in == null || pre.length == 0 || in.length == 0) {
             return null;
         }
-        if (preOrder.length == 0 || inorder.length == 0) {
-            return null;
-        }
-        if (preOrder.length != inorder.length) {
-            System.err.println("两个数组的长度不一致！");
+        if (pre.length != in.length) {
             return null;
         }
 
-        BinaryTreeNode root = new BinaryTreeNode();
-        root.value = preOrder[0];
-
-        for (int i = 0; i < inorder.length; i++) {
-            if (inorder[i] == preOrder[0]) {
-                root.leftNode = reConstructBinaryTree(Arrays.copyOfRange(preOrder, 1, i + 1)
-                        , Arrays.copyOfRange(inorder, 0, i));
-                root.rightNode = reConstructBinaryTree(Arrays.copyOfRange(preOrder, i + 1, preOrder.length)
-                        , Arrays.copyOfRange(inorder, i + 1, inorder.length));
+        TreeNode root = new TreeNode(pre[0]);
+        for (int i = 0; i < pre.length; i++) {
+            if (pre[0] == in[i]) {
+                root.left = reConstructBinaryTree(Arrays.copyOfRange(pre, 1, i + 1), Arrays.copyOfRange(in, 0, i));
+                root.right = reConstructBinaryTree(Arrays.copyOfRange(pre, i + 1, pre.length), Arrays.copyOfRange(in, i + 1, in.length));
             }
         }
-
         return root;
     }
 
     /**
-     * 打印二叉树
+     * 解法二：递归：传入子数组的边界索引
+     * 时间复杂度：O(n)，空间复杂度：O(n)
      *
-     * @param root
+     * @param preorder
+     * @param inorder
+     * @return
      */
-    public static void printBinaryTreeNode(BinaryTreeNode root) {
-        StringBuilder sb = new StringBuilder();
-        if (root != null) {
-            printBinaryTreeNode(root.leftNode);
-            printBinaryTreeNode(root.rightNode);
-            sb.append(root.value).append(",");
-        }
-        System.out.print(sb);
+    public TreeNode reConstructBinaryTree2(int[] preorder, int[] inorder) {
+        if (preorder == null || preorder.length == 0 ||
+                inorder == null || inorder.length == 0) return null;
+        return helper(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
     }
+
+
+    private TreeNode helper(int[] preorder, int preL, int preR, int[] inorder, int inL, int inR) {
+        if (preL > preR || inL > inR) {
+            return null;
+        }
+        int rootVal = preorder[preL];
+        int index = 0;
+        while (index <= inR && inorder[index] != rootVal) {
+            index++;
+        }
+        TreeNode root = new TreeNode(rootVal);
+        root.left = helper(preorder, preL + 1, preL - inL + index, inorder, inL, index);
+        root.right = helper(preorder, preL - inL + index + 1, preR, inorder, index + 1, inR);
+        return root;
+    }
+
 }

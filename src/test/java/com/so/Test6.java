@@ -1,6 +1,7 @@
 package com.so;
 
 import org.junit.Test;
+import com.so.Common.TreeNode;
 
 /**
  * 第6题
@@ -16,8 +17,7 @@ public class Test6 {
         int[] pre = {1, 2, 4, 7, 3, 5, 6, 8};
         // 中序遍历结果
         int[] in = {4, 7, 2, 1, 5, 3, 8, 6};
-        BinaryTreeSearch6.BinaryTreeNode root = BinaryTreeSearch6.reConstructBinaryTree(pre, in);
-        System.out.print("重建后的二叉树：");
-        BinaryTreeSearch6.printBinaryTreeNode(root);
+        TreeNode root = BinaryTreeSearch6.reConstructBinaryTree(pre, in);
+        System.out.print("重建后的二叉树（层序输出）：" + new PrintFromTopToBottom23().PrintFromTopToBottom(root));
     }
 }

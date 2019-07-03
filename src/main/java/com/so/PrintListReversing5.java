@@ -2,9 +2,10 @@ package com.so;
 
 import java.util.ArrayList;
 import java.util.Stack;
+import com.so.Common.ListNode;
 
 /**
- * 第5题
+ * 第5题 从尾到头打印链表
  * 输入一个链表，从尾到头打印链表每个节点的值
  *
  * @author qgl
@@ -12,18 +13,13 @@ import java.util.Stack;
  */
 public class PrintListReversing5 {
 
-    static class ListNode {
-        public int val;
-        public ListNode next;
-    }
-
     /**
      * 解法一：利用栈输出
      * @param headNode
      */
     public static ArrayList<Integer> printListReverse1(ListNode headNode) {
         ArrayList<Integer> list = new ArrayList<>();
-        Stack<ListNode> stack = new Stack<ListNode>();
+        Stack<ListNode> stack = new Stack<>();
         while (headNode != null) {
             stack.push(headNode);
             headNode = headNode.next;
@@ -36,40 +32,18 @@ public class PrintListReversing5 {
     }
 
     /**
-     * 解法二：借助栈存入数组
-     * @param listNode
+     * 解法二：递归（其实底层还是栈）
+     * @param headNode
      * @return
      */
-    public static ArrayList<Integer> printListReverse2(ListNode listNode) {
-        ArrayList<Integer> list = new ArrayList<>();
-        if (listNode == null)
-            return list;
-        Stack<ListNode> stack = new Stack<>();
-        while (listNode != null) {
-            stack.push(listNode);
-            listNode = listNode.next;
-        }
-
-        while (!stack.isEmpty()) {
-            list.add(stack.pop().val);
-        }
-        return list;
-    }
-
-    /**
-     * 解法三：递归（其实底层还是栈）
-     * @param listNode
-     * @return
-     */
-    public static ArrayList<Integer> printListReverse3(ListNode listNode) {
+    public static ArrayList<Integer> printListReverse2(ListNode headNode) {
         ArrayList<Integer> list = new ArrayList<Integer>();
 
-        ListNode pNode = listNode;
-        if (pNode != null) {
-            if (pNode.next != null) {
-                list = printListReverse3(pNode.next);
+        if (headNode != null) {
+            if (headNode.next != null) {
+                list = printListReverse2(headNode.next);
             }
-            list.add(pNode.val);
+            list.add(headNode.val);
         }
         return list;
     }
