@@ -1,6 +1,7 @@
 package com.so;
 
 import org.junit.Test;
+import com.so.Common.TreeNode;
 
 /**
  * 第23题
@@ -12,26 +13,20 @@ import org.junit.Test;
 public class Test23 {
     @Test
     public void test23() throws Exception {
-        PrintFromTopToBottom23.BinaryTreeNode root1 = new PrintFromTopToBottom23.BinaryTreeNode();
-        PrintFromTopToBottom23.BinaryTreeNode node1 = new PrintFromTopToBottom23.BinaryTreeNode();
-        PrintFromTopToBottom23.BinaryTreeNode node2 = new PrintFromTopToBottom23.BinaryTreeNode();
-        PrintFromTopToBottom23.BinaryTreeNode node3 = new PrintFromTopToBottom23.BinaryTreeNode();
-        PrintFromTopToBottom23.BinaryTreeNode node4 = new PrintFromTopToBottom23.BinaryTreeNode();
-        PrintFromTopToBottom23.BinaryTreeNode node5 = new PrintFromTopToBottom23.BinaryTreeNode();
-        PrintFromTopToBottom23.BinaryTreeNode node6 = new PrintFromTopToBottom23.BinaryTreeNode();
-        root1.leftNode = node1;
-        root1.rightNode = node2;
-        node1.leftNode = node3;
-        node1.rightNode = node4;
-        node4.leftNode = node5;
-        node4.rightNode = node6;
-        root1.data = 8;
-        node1.data = 9;
-        node2.data = 7;
-        node3.data = 10;
-        node4.data = 2;
-        node5.data = 4;
-        node6.data = 1;
+        TreeNode root = new TreeNode(8);
+        TreeNode node1 = new TreeNode(9);
+        TreeNode node2 = new TreeNode(7);
+        TreeNode node3 = new TreeNode(10);
+        TreeNode node4 = new TreeNode(2);
+        TreeNode node5 = new TreeNode(4);
+        TreeNode node6 = new TreeNode(1);
+        root.left = node1;
+        root.right = node2;
+        node1.left = node3;
+        node1.right = node4;
+        node4.left = node5;
+        node4.right = node6;
+
         /*
                 原二叉树
                      8
@@ -43,7 +38,7 @@ public class Test23 {
                    4   1
         */
 
-        System.out.print("层序输出的二叉树：");
-        PrintFromTopToBottom23.printFromTopToBottom(root1);
+        PrintFromTopToBottom23 printFromTopToBottom23 = new PrintFromTopToBottom23();
+        System.out.print("层序输出的二叉树：" + printFromTopToBottom23.PrintFromTopToBottom(root));
     }
 }
