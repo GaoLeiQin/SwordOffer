@@ -13,6 +13,6 @@ public class Test24 {
     @Test
     public void test24() throws Exception {
         int[] array = {4, 8, 6, 12, 16, 14, 10};
-        System.out.println("结果：" + VerifySequerceOfBST24.verifySequenceOfBST(array));
+        System.out.println("结果：" + VerifySequenceOfBST24.VerifySquenceOfBST(array));
     }
 }

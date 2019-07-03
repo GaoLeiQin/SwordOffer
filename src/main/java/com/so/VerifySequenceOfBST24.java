@@ -1,8 +1,6 @@
 package com.so;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * 第24题
@@ -22,7 +20,7 @@ public class VerifySequenceOfBST24 {
         if (sequence == null || sequence.length == 0) {
             return false;
         }
-        
+
         int rstart = 0;
         int rootIndex = sequence.length - 1;
         for (int i = 0; i < rootIndex; i++) {
@@ -34,7 +32,7 @@ public class VerifySequenceOfBST24 {
             VerifySquenceOfBST(Arrays.copyOfRange(sequence,0,rootIndex));
             return true;
         }
-        
+
         for (int i = rstart; i < rootIndex; i++) {
             if (sequence[i] <= sequence[rootIndex]) {
                 return false;
