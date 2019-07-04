@@ -16,6 +16,6 @@ public class Test30 {
     public void test30() throws Exception {
         int[] array = {4, 5, 1, 6, 2, 7, 3, 2};
         int k = 3;
-        System.out.println("最小的" + k + "个数是：" + Arrays.toString(GetLeastNumbers30.getLeastNumbers(array, k)));
+        System.out.println("最小的" + k + "个数是：" + GetLeastNumbers30.getLeastNumbers(array, k));
     }
 }

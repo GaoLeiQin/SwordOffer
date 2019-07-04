@@ -1,5 +1,6 @@
 package com.so;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -17,7 +18,8 @@ public class GetLeastNumbers30 {
      * @param k
      * @return
      */
-    public static int[] getLeastNumbers(int[] array, int k) {
+    public static ArrayList<Integer> getLeastNumbers(int[] array, int k) {
+        ArrayList<Integer> list = new ArrayList<>();
         if (array == null || k < 0 || k > array.length) {
             return null;
         }
@@ -34,7 +36,11 @@ public class GetLeastNumbers30 {
             }
         }
 
-        return kArray;
+        for (int i = kArray.length - 1; i >= 0; i--) {
+            list.add(kArray[i]);
+        }
+
+        return list;
     }
 
     /**
