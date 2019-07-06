@@ -1,8 +1,7 @@
 package com.so;
 
 import org.junit.Test;
-
-import java.util.Arrays;
+import com.so.Common.ListNode;
 
 /**
  * 第15题
@@ -14,18 +13,15 @@ import java.util.Arrays;
 public class Test15 {
     @Test
     public void test15() throws Exception {
-        FindKthToTail15.ListNode head = new FindKthToTail15.ListNode();
-        FindKthToTail15.ListNode second = new FindKthToTail15.ListNode();
-        FindKthToTail15.ListNode third = new FindKthToTail15.ListNode();
-        FindKthToTail15.ListNode forth = new FindKthToTail15.ListNode();
-        head.nextNode = second;
-        second.nextNode = third;
-        third.nextNode = forth;
-        head.data = 1;
-        second.data = 2;
-        third.data = 3;
-        forth.data = 4;
-        System.out.println("解法一：" + FindKthToTail15.findKthToTail(head, 2).data);
-        System.out.println("解法二：" + FindKthToTail15.findKthToTail2(head, 2).data);
+        ListNode head = new ListNode(1);
+        ListNode second = new ListNode(2);
+        ListNode third = new ListNode(3);
+        ListNode forth = new ListNode(4);
+        head.next = second;
+        second.next = third;
+        third.next = forth;
+
+        ListNode kthToTail = FindKthToTail15.findKthToTail(head, 5);
+        System.out.println("解法一：" + Common.getAllListNode(kthToTail));
     }
 }

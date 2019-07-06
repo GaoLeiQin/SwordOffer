@@ -1,5 +1,7 @@
 package com.so;
 
+import com.so.Common.ListNode;
+
 /**
  * 第15题
  * 输入一个链表，输出该链表的倒数第K个结点
@@ -8,13 +10,6 @@ package com.so;
  * @date 2017/08/10
  */
 public class FindKthToTail15 {
-    /**
-     * 链表
-     */
-    static class ListNode {
-        int data;
-        ListNode nextNode;
-    }
 
     /**
      * 解法一：一快一慢两个指针，快指针先走k步，然后两个指针同时走
@@ -24,29 +19,22 @@ public class FindKthToTail15 {
      * @return
      */
     public static ListNode findKthToTail(ListNode head, int k) {
-        if (head == null || k <= 0) {
+        if (head == null || k < 1) {
             return null;
         }
-
-        ListNode poListNode = head;
-        ListNode resultListNode = null;
-
-        //如果K <= 0，返回null
-        for (int i = 0; i < k - 1; ++i) {
-            if (poListNode.nextNode != null) {
-                poListNode = poListNode.nextNode;
-            } else {
+        ListNode fast = head;
+        ListNode slow = head;
+        while (k-- > 1) {
+            if (fast.next == null) {
                 return null;
             }
+            fast = fast.next;
         }
-
-        resultListNode = head;
-
-        while (poListNode.nextNode != null) {
-            poListNode = poListNode.nextNode;
-            resultListNode = resultListNode.nextNode;
+        while (fast.next != null) {
+            fast = fast.next;
+            slow = slow.next;
         }
-        return resultListNode;
+        return slow;
     }
 
     /**
@@ -61,7 +49,7 @@ public class FindKthToTail15 {
         ListNode p = head;
         while (p != null) {
             length++;
-            p = p.nextNode;
+            p = p.next;
         }
         ListNode target = null;
         if (length == k) {
@@ -69,7 +57,7 @@ public class FindKthToTail15 {
         }
 
         for (int i = 0; i < length - k; i++) {
-            head = head.nextNode;
+            head = head.next;
             target = head;
         }
         return target;
