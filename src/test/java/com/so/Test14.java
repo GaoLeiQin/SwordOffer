@@ -15,11 +15,10 @@ import java.util.Arrays;
 public class Test14 {
     @Test
     public void test14() throws Exception {
-        int[] array1 = {1, 2, 3, 4, 5, 6, 7, 8};
-        int[] array2 = Arrays.copyOf(array1, array1.length);
-
-        System.out.println("解法一：利用辅助函数 " + Arrays.toString(OddEvenNumber14.order1(array1)));
-        System.out.println("解法二：无辅助函数 " + Arrays.toString(OddEvenNumber14.order2(array2)));
+        OddEvenNumber14 oddEvenNumber14 = new OddEvenNumber14();
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8};
+        oddEvenNumber14.reOrderArray(array);
+        System.out.println("解法一：移动偶数位置 " + Arrays.toString(array));
 
     }
 }

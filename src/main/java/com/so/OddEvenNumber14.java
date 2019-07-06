@@ -9,89 +9,62 @@ package com.so;
  * @date 2017/08/10
  */
 public class OddEvenNumber14 {
+
     /**
-     * 利用辅助函数
+     * 解法一：移动偶数位置
+     * 时间复杂度 O（n²)，空间复杂度 O（1)
+     *
      * @param array
      */
-    public static int[] order1(int[] array) {
-        if(array == null)
-            return null;
-        int start = 0;
-        int end = array.length - 1;
-        while (start < end) {
-            while (start < end && isEven(array[end])) {
-                end--;
-            }
-            while (start < end && !isEven(array[start])) {
-                start++;
-            }
-            if(start < end) {
-                int temp=array[start];
-                array[start]=array[end];
-                array[end]=temp;
-            }
+    public void reOrderArray(int[] array) {
+        if (array == null || array.length == 0) {
+            return;
         }
 
-        return array;
-    }
-
-    /**
-     * 辅助函数的实现
-     * @param n
-     * @return
-     */
-    private static boolean isEven(int n) {
-        return n%2 == 0;
-    }
-
-    /**
-     * 解法二： 无辅助函数
-     * @param array
-     */
-    public static int[] order2(int[] array) {
-        int left = 0;
-        int right = array.length - 1;
-        while (left <= right) {
-            if (array[left] % 2 != 0) {
-                left++;
-            }else {
-                if (array[right] % 2 != 0) {
-                    int temp = array[right];
-                    array[right] = array[left];
-                    array[left] = temp;
-                }else {
-                    right--;
+        for (int i = 1; i < array.length; i++) {
+            int j = i - 1;
+            if (array[i] % 2 != 0) {
+                while (j >= 0) {
+                    if (array[j] % 2 != 0) {
+                        break;
+                    }
+                    if (array[j] % 2 == 0) {
+                        int t = array[j + 1];
+                        array[j + 1] = array[j];
+                        array[j] = t;
+                        j--;
+                    }
                 }
             }
         }
-
-        return array;
     }
 
     /**
-     * 解法三：利用辅助数组
-     * @param array 返回的数组顺序是原数组顺序
+     * 解法二：双指针法
+     * 时间复杂度 O（n)，空间复杂度 O（1)
+     *
+     * @param array
      */
-    public static int[] order3(int [] array) {
-        int index = 0;
-        int length = array.length;
-        int count = 0;
-        for (int i = 0; i < length; i++) {
-            if (array[i] % 2 != 0)
-                count++;
-        }
-        int[] data = new int[array.length];
-        for (int i = 0; i < length; i++) {
-            if (array[i] % 2 != 0)
-                data[index++] = array[i];
-            else
-                data[count++] = array[i];
+    public void reOrderArray2(int[] array) {
+        if (array == null || array.length == 0) {
+            return;
         }
 
-        for (int i = 0; i < length; i++) {
-            array[i] = data[i];
-        }
+        int left = 0;
+        int right = array.length - 1;
+        while (left < right) {
+            while (left < right && array[left] % 2 != 0) {
+                left++;
+            }
+            while (left < right && array[right] % 2 == 0) {
+                right--;
+            }
 
-        return data;
+            if (left < right) {
+                int tmp = array[left];
+                array[left] = array[right];
+                array[right] = tmp;
+            }
+        }
     }
 }
