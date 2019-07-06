@@ -12,9 +12,10 @@ import org.junit.Test;
 public class Test7 {
     @Test
     public void test7() throws Exception {
-        DoubleSQueue7.appendTail(3);
-        DoubleSQueue7.appendTail(5);
-        DoubleSQueue7.appendTail(6);
-        System.out.println("删除的头节点是：" + DoubleSQueue7.deleteHead());
+        DoubleSQueue7 doubleSQueue7 = new DoubleSQueue7();
+        doubleSQueue7.push(2);
+        doubleSQueue7.push(5);
+        doubleSQueue7.push(8);
+        System.out.println("出队列：" + doubleSQueue7.pop());
     }
 }
