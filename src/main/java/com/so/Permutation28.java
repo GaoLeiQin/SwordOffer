@@ -13,6 +13,7 @@ public class Permutation28 {
 
     /**
      * 解法一：while循环
+     *
      * @param str
      * @return
      */
@@ -46,40 +47,40 @@ public class Permutation28 {
 
     /**
      * 解法二：递归
+     *
      * @param str
      * @return
      */
-    public static ArrayList<String> permutation2(String str) {
-        ArrayList<String> result = new ArrayList<String>();
-        if (str == null || str.length() == 0)
-            return result;
+    public static ArrayList<String> Permutation(String str) {
+        ArrayList<String> res = new ArrayList<>();
+        if (str == null || str.length() == 0) {
+            return res;
+        }
+        helper(res, 0, str.toCharArray());
+        // 符合结果的输出顺序
+        Collections.sort(res);
+        return res;
 
-        char[] chars = str.toCharArray();
-        TreeSet<String> temp = new TreeSet<>();
-        Permutation(chars, 0, temp);
-        result.addAll(temp);
-        return result;
     }
 
-    public static void Permutation(char[] chars, int index, TreeSet<String> result) {
-        if (chars == null || chars.length == 0)
+    private static void helper(ArrayList<String> res, int index, char[] s) {
+        if (index == s.length - 1) {
+            res.add(String.valueOf(s));
             return;
-        if (index < 0 || index > chars.length - 1)
-            return;
-        if (index == chars.length - 1) {
-            result.add(String.valueOf(chars));
-        } else {
-            for (int i = index; i <= chars.length - 1; i++) {
-                swap(chars, index, i);
-                Permutation(chars, index + 1, result);
-                // 回退
-                swap(chars, index, i);
+        }
+
+        for (int i = index; i < s.length; i++) {
+            if (i == index || s[index] != s[i]) {
+                swap(s, index, i);
+                helper(res, index + 1, s);
+                swap(s, index, i);
             }
         }
     }
 
     /**
      * 交换两个字符的位置
+     *
      * @param output
      * @param i
      * @param j

@@ -14,6 +14,6 @@ public class Test28 {
     public void test28() throws Exception {
         String testStr = "try";
         System.out.println("解法一：while循环，结果：" + Permutation28.permutation1(testStr));
-        System.out.println("解法二：递归，结果：" + Permutation28.permutation2(testStr));
+        System.out.println("解法二：递归，结果：" + Permutation28.Permutation(testStr));
     }
 }

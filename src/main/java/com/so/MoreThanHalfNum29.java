@@ -10,60 +10,38 @@ package com.so;
 public class MoreThanHalfNum29 {
     /**
      * 获取数组中出现次数超过数组长度一半的数字
-     * @param array
+     *
+     * @param nums
      * @return
      */
-    public static Integer moreThanHalfNum(int[] array) {
-        if (array == null || array.length == 0) {
-            return null;
-        }
-        Integer number = null;
+    public static int moreThanHalfNum(int[] nums) {
         int count = 0;
-        Integer resultInteger = null;
+        int candidate = 0;
 
-        for (int i = 0; i < array.length; i++) {
-            if (number == null) {
-                number = array[i];
-                count++;
-            } else {
-                if (array[i] != number) {
-                    if (count == 0) {
-                        number = array[i];
-                        count = 1;
-                    } else {
-                        count--;
-                    }
-                } else {
-                    count++;
-                }
+        for (int num : nums) {
+            if (count == 0) {
+                candidate = num;
             }
-
-            if (count == 1) {
-                resultInteger = number;
-            }
+            count += (num == candidate) ? 1 : -1;
         }
 
-        if (checkMoreThanHalf(array, resultInteger)) {
-            return resultInteger;
-        }
-        return null;
+        return checkMoreThanHalf(nums, candidate) ? candidate : 0;
     }
 
     /**
      * 检查输入的数字出现的次数是否超过数组长度一半
+     *
      * @param array
      * @param number
      * @return
      */
     private static boolean checkMoreThanHalf(int[] array, Integer number) {
         int times = 0;
-
         for (int i : array) {
             if (i == number) {
                 times++;
             }
         }
-
         return times * 2 >= array.length;
     }
 }
