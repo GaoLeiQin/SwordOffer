@@ -1,6 +1,7 @@
 package com.so;
 
 import org.junit.Test;
+import com.so.Common.ListNode;
 
 /**
  * 第16题 反转链表
@@ -12,20 +13,15 @@ import org.junit.Test;
 public class Test16 {
     @Test
     public void test16() throws Exception {
-        ReverseList16.ListNode head = new ReverseList16.ListNode();
-        ReverseList16.ListNode second = new ReverseList16.ListNode();
-        ReverseList16.ListNode third = new ReverseList16.ListNode();
-        ReverseList16.ListNode forth = new ReverseList16.ListNode();
-        head.nextNode = second;
-        second.nextNode = third;
-        third.nextNode = forth;
-        head.data = 1;
-        second.data = 2;
-        third.data = 3;
-        forth.data = 4;
+        ListNode head = new ListNode(1);
+        ListNode second = new ListNode(2);
+        ListNode third = new ListNode(3);
+        ListNode forth = new ListNode(4);
+        head.next = second;
+        second.next = third;
+        third.next = forth;
 
-        System.out.println("解法一：" + ReverseList16.reverseList1(head).data);
-//        System.out.println("解法二：" + ReverseList16.reverseList2(head).data);
-//        System.out.println("解法三：" + ReverseList16.reverseList3(head).data);
+        ListNode listNode = ReverseList16.reverseList1(head);
+        System.out.println("解法一：" + Common.getAllListNode(listNode));
     }
 }

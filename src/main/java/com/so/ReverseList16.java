@@ -1,5 +1,7 @@
 package com.so;
 
+import com.so.Common.ListNode;
+
 /**
  * 第16题 反转链表
  * 输入一个链表的头结点，反转该链表并输出翻转后的头结点
@@ -8,14 +10,6 @@ package com.so;
  * @date 2017/08/10
  */
 public class ReverseList16 {
-    /**
-     * 链表
-     */
-    public static class ListNode {
-        int data;
-        ListNode nextNode;
-    }
-
     /**
      * 解法一：迭代：两个指针，反向输出
      * 时间复杂度：O(n)，空间复杂度：O(1)
@@ -28,8 +22,8 @@ public class ReverseList16 {
         ListNode curr = head;
 
         while (curr != null) {
-            ListNode tmp = curr.nextNode;
-            curr.nextNode = pre;
+            ListNode tmp = curr.next;
+            curr.next = pre;
             pre = curr;
             curr = tmp;
         }
@@ -47,8 +41,8 @@ public class ReverseList16 {
         ListNode pre = null;
 
         while (head != null) {
-            ListNode p = head.nextNode;
-            head.nextNode = pre;
+            ListNode p = head.next;
+            head.next = pre;
             pre = head;
             head = p;
         }
@@ -63,13 +57,13 @@ public class ReverseList16 {
      * @return
      */
     public static ListNode reverseList3(ListNode head) {
-        if (head == null || head.nextNode == null) {
+        if (head == null || head.next == null) {
             return head;
         }
 
-        ListNode p = reverseList3(head.nextNode);
-        head.nextNode.nextNode = head.nextNode;
-        head.nextNode = null;
+        ListNode p = reverseList3(head.next);
+        head.next.next = head.next;
+        head.next = null;
         return p;
     }
 }
