@@ -1,5 +1,7 @@
 package com.so;
 
+import com.so.Common.ListNode;
+
 /**
  * 第17题
  * 输入两个递增的链表，合并这两个链表并使新链表仍然是递增的
@@ -9,86 +11,55 @@ package com.so;
  */
 public class MergeLinked17 {
     /**
-     * 链表
-     */
-    static class ListNode {
-        int data;
-        ListNode nextNode;
-    }
-
-    /**
      * 解法一：递归
+     * 时间复杂度：O(m+n)，空间复杂度：O(m+n)
      *
-     * @param root1
-     * @param root2
+     * @param list1
+     * @param list2
      * @return
      */
-    public static ListNode mergeTwoLists1(ListNode root1, ListNode root2) {
-        if (root1 == null) {
-            return root2;
+    public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if (list1 == null) {
+            return list2;
         }
-        if (root2 == null) {
-            return root1;
+        if (list2 == null) {
+            return list1;
         }
 
-        ListNode mergeHead = null;
-
-        if (root1.data <= root2.data) {
-            mergeHead = root1;
-            mergeHead.nextNode = mergeTwoLists1(root1.nextNode, root2);
+        if (list1.val < list2.val) {
+            list1.next = mergeTwoLists(list1.next, list2);
+            return list1;
         } else {
-            mergeHead = root2;
-            mergeHead.nextNode = mergeTwoLists1(root1, root2.nextNode);
+            list2.next = mergeTwoLists(list1, list2.next);
+            return list2;
         }
-
-        return mergeHead;
     }
 
     /**
-     * 解法二 ： 非递归
+     * 解法二：迭代
+     * 时间复杂度：O(m+n)，空间复杂度：O(1)
      *
-     * @param n1
-     * @param n2
+     * @param list1
+     * @param list2
      * @return
      */
-    public static ListNode mergeTwoLists2(ListNode n1, ListNode n2) {
-        ListNode newHead = null;
-        if (n1 == null) {
-            return n2;
-        }
-        if (n2 == null) {
-            return n1;
-        }
-        if (n1.data <= n2.data) {
-            newHead = n1;
-            n1 = n1.nextNode;
-        } else {
-            newHead = n2;
-            n2 = n2.nextNode;
-        }
-
-        //temp永远指向最新合并的结点
-        ListNode temp = newHead;
-        while (n1 != null && n2 != null) {
-            if (n1.data <= n2.data) {
-                temp.nextNode = n1;
-                n1 = n1.nextNode;
+    public static ListNode mergeTwoLists2(ListNode list1, ListNode list2) {
+        ListNode preHead = new ListNode(-1);
+        ListNode pre = preHead;
+        
+        while (list1 != null && list2 != null) {
+            if (list1.val < list2.val) {
+                pre.next = list1;
+                list1 = list1.next;
             } else {
-                temp.nextNode = n2;
-                n2 = n2.nextNode;
+                pre.next = list2;
+                list2 = list2.next;
             }
-
-            temp = temp.nextNode;
+            pre = pre.next;
         }
 
-        if (n1 != null) {
-            temp.nextNode = n1;
-        }
-
-        if (n2 != null) {
-            temp.nextNode = n2;
-        }
-        return newHead;
+        pre.next = list1 == null ? list2 : list1;
+        return preHead.next;
     }
 
 }

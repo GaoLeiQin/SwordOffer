@@ -1,6 +1,7 @@
 package com.so;
 
 import org.junit.Test;
+import com.so.Common.ListNode;
 
 /**
  * 第17题
@@ -12,44 +13,23 @@ import org.junit.Test;
 public class Test17 {
     @Test
     public void test17() throws Exception {
-        MergeLinked17.ListNode head1 = new MergeLinked17.ListNode();
-        MergeLinked17.ListNode second1 = new MergeLinked17.ListNode();
-        MergeLinked17.ListNode head2 = new MergeLinked17.ListNode();
-        MergeLinked17.ListNode second2 = new MergeLinked17.ListNode();
-        MergeLinked17.ListNode third2 = new MergeLinked17.ListNode();
-        head1.nextNode = second1;
-        head2.nextNode = second2;
-        second2.nextNode = third2;
-        head1.data = 1;
-        second1.data = 5;
-        head2.data = 2;
-        second2.data = 4;
-        third2.data = 7;
+        ListNode head = new ListNode(1);
+        ListNode second = new ListNode(3);
+        ListNode third = new ListNode(5);
+        ListNode forth = new ListNode(7);
+        head.next = second;
+        second.next = third;
+        third.next = forth;
 
-        MergeLinked17.ListNode result1 = MergeLinked17.mergeTwoLists1(head1, head2);
-        System.out.println("解法一：" + printList(result1));
+        ListNode head2 = new ListNode(2);
+        ListNode second2 = new ListNode(4);
+        ListNode third2= new ListNode(6);
+        ListNode forth2 = new ListNode(8);
+        head2.next = second2;
+        second2.next = third2;
+        third2.next = forth2;
 
-//        MergeLinked17.ListNode result2 = MergeLinked17.mergeTwoLists2(head1, head2);
-//        System.out.println("解法二：" + printList(result2));
-    }
-
-    /**
-     * 输出合并后的链表
-     *
-     * @param root
-     * @return
-     */
-    public static String printList(MergeLinked17.ListNode root) {
-        if (root == null) {
-            return null;
-        }
-        StringBuilder sb = new StringBuilder();
-
-        MergeLinked17.ListNode p = root;
-        while (p != null) {
-            sb.append(p.data).append(",");
-            p = p.nextNode;
-        }
-        return String.valueOf(sb);
+        ListNode listNode = MergeLinked17.mergeTwoLists(head, head2);
+        System.out.println("解法一：" + Common.getAllListNode(listNode));
     }
 }
