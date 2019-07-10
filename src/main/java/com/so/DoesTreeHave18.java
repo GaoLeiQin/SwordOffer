@@ -1,5 +1,7 @@
 package com.so;
 
+import com.so.Common.TreeNode;
+
 /**
  * 第18题
  * 判断二叉树A中是否包含子树B
@@ -9,55 +11,44 @@ package com.so;
  */
 public class DoesTreeHave18 {
     /**
-     * 链表
-     */
-    static class BinaryTreeNode {
-        int data;
-        BinaryTreeNode leftNode;
-        BinaryTreeNode rightNode;
-    }
-
-    /**
      * 判断是否包含子树
-     * @param root1
-     * @param root2
+     *
+     * @param source
+     * @param target
      * @return
      */
-    public static boolean hasSubTree(BinaryTreeNode root1, BinaryTreeNode root2) {
-        boolean result = false;
-
-        if (root1 != null && root2 != null) {
-            if (root1.data == root2.data)
-                result = doesTree1HaveTree2(root1, root2);
-            if (!result)
-                return hasSubTree(root1.leftNode, root2) || hasSubTree(root1.rightNode, root2);
+    public static boolean hasSubTree(TreeNode source, TreeNode target) {
+        if (target == null) {
+            return true;
+        }
+        if (source == null) {
+            return false;
         }
 
-        return result;
+        if (doesTree1HaveTree2(source, target)) {
+            return true;
+        }
+        return hasSubTree(source.left, target) || hasSubTree(source.right, target);
     }
 
     /**
      * 递归遍历两棵树
-     * @param root1
-     * @param root2
+     *
+     * @param source
+     * @param target
      * @return
      */
-    public static boolean doesTree1HaveTree2(BinaryTreeNode root1, BinaryTreeNode root2) {
-        // 若Tree2已经遍历完了都能对应的上，返回true
-        if (root2 == null) {
+    public static boolean doesTree1HaveTree2(TreeNode source, TreeNode target) {
+        if (source == null && target == null) {
             return true;
         }
-
-        //若Tree2还没有遍历完，Tree1却遍历完了。返回false
-        if (root1 == null) {
+        if (source == null || target == null) {
+            return false;
+        }
+        if (source.val != target.val) {
             return false;
         }
 
-        if (root1.data != root2.data) {
-            return false;
-        }
-
-        return doesTree1HaveTree2(root1.leftNode, root2.leftNode) &&
-                doesTree1HaveTree2(root1.rightNode, root2.rightNode);
+        return doesTree1HaveTree2(source.left, target.left) && doesTree1HaveTree2(source.right, target.right);
     }
 }

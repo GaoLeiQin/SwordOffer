@@ -1,5 +1,6 @@
 package com.so;
 
+import com.so.Common.TreeNode;
 import org.junit.Test;
 
 /**
@@ -12,34 +13,25 @@ import org.junit.Test;
 public class Test18 {
     @Test
     public void test18() throws Exception {
-        DoesTreeHave18.BinaryTreeNode root1 = new DoesTreeHave18.BinaryTreeNode();
-        DoesTreeHave18.BinaryTreeNode node1 = new DoesTreeHave18.BinaryTreeNode();
-        DoesTreeHave18.BinaryTreeNode node2 = new DoesTreeHave18.BinaryTreeNode();
-        DoesTreeHave18.BinaryTreeNode node3 = new DoesTreeHave18.BinaryTreeNode();
-        DoesTreeHave18.BinaryTreeNode node4 = new DoesTreeHave18.BinaryTreeNode();
-        DoesTreeHave18.BinaryTreeNode node5 = new DoesTreeHave18.BinaryTreeNode();
-        DoesTreeHave18.BinaryTreeNode node6 = new DoesTreeHave18.BinaryTreeNode();
-        root1.leftNode = node1;
-        root1.rightNode = node2;
-        node1.leftNode = node3;
-        node1.rightNode = node4;
-        node4.leftNode = node5;
-        node4.rightNode = node6;
-        root1.data = 8;
-        node1.data = 8;
-        node2.data = 7;
-        node3.data = 9;
-        node4.data = 2;
-        node5.data = 4;
-        node6.data = 7;
-        DoesTreeHave18.BinaryTreeNode root2 = new DoesTreeHave18.BinaryTreeNode();
-        DoesTreeHave18.BinaryTreeNode a = new DoesTreeHave18.BinaryTreeNode();
-        DoesTreeHave18.BinaryTreeNode b = new DoesTreeHave18.BinaryTreeNode();
-        root2.leftNode = a;
-        root2.rightNode = b;
-        root2.data = 8;
-        a.data = 9;
-        b.data = 2;
+        TreeNode root1 = new TreeNode(3);
+        TreeNode node1 = new TreeNode(4);
+        TreeNode node2 = new TreeNode(5);
+        TreeNode node3 = new TreeNode(1);
+        TreeNode node4 = new TreeNode(2);
+        TreeNode node5 = new TreeNode(0);
+        TreeNode node6 = new TreeNode(0);
+        root1.left = node1;
+        root1.right = node2;
+        node1.left = node3;
+        node1.right = node4;
+        node4.left = node5;
+        node4.right = node6;
+
+        TreeNode root2 = new TreeNode(4);
+        TreeNode a = new TreeNode(1);
+        TreeNode b = new TreeNode(2);
+        root2.left = a;
+        root2.right = b;
 
         System.out.println("是否包含 " + DoesTreeHave18.hasSubTree(root1, root2));
     }
