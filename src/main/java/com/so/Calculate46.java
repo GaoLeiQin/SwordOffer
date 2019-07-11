@@ -14,19 +14,24 @@ public class Calculate46 {
      * @param n
      * @return
      */
-    public static int sum3(int n) {
+    public static int sum(int n) {
         int sum = n;
-        boolean result = (n > 0) && ((sum += sum3(n-1)) > 0);
+        boolean result = (n > 0) && ((sum += sum(n-1)) > 0);
         return sum;
     }
 
     /**
      * 解法二：利用递归和全局变量求和
      */
-    public static int sum2 = 0;
-    public static boolean sum2(int n) {
+    private static int sum2 = 0;
+    public static int sum2(int n) {
+        sum3(n);
+        return sum2;
+    }
+
+    private static boolean sum3(int n) {
         sum2 += n;
-        return (n > 0) && sum2(n - 1);
+        return (n > 0) && sum3(n - 1);
     }
 
 }
