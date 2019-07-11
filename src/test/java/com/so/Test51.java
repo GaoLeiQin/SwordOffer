@@ -15,8 +15,9 @@ public class Test51 {
 
     @Test
     public void test51() throws Exception {
-        int[] arr = {6, 2, 3, 5, 2, 1, 5};
-        System.out.println("解法一：数组中第一个重复的数字：" + Duplicate51.duplicate1(arr));
-        System.out.println("解法二：数组中第一个重复的数字：" + Duplicate51.duplicate2(arr));
+        int[] arr = {6, 5, 3, 5, 2, 1, 5};
+        System.out.println("解法三，快慢指针：" + Duplicate51.duplicate3(arr));
+        System.out.println("解法二，利用HashSet：" + Duplicate51.duplicate2(arr));
+        System.out.println("解法一，利用数组的特点：" + Duplicate51.duplicate1(arr));
     }
 }

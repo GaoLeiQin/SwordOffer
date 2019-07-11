@@ -64,4 +64,31 @@ public class Duplicate51 {
         return null;
     }
 
+    /**
+     * 解法三：快慢指针
+     *
+     * @param numbers
+     * @return
+     */
+    public static int duplicate3(int[] numbers) {
+        if (numbers == null || numbers.length == 0) {
+            return -1;
+        }
+        int slow = 0;
+        int fast = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            slow = numbers[slow];
+            fast = numbers[numbers[fast]];
+            if (fast == slow) {
+                fast = 0;
+                while (fast != slow) {
+                    fast = numbers[fast];
+                    slow = numbers[slow];
+                }
+                return slow;
+            }
+        }
+        return -1;
+    }
+
 }
