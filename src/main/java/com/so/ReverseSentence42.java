@@ -15,8 +15,8 @@ public class ReverseSentence42 {
      * @return
      */
     public static String reverseSentence(String sentence) {
-        if (sentence == null || sentence.length() == 0) {
-            return null;
+        if (sentence == null || sentence.length() == 0 || sentence.trim().length() == 0) {
+            return sentence;
         }
         String blank = " ";
         String sentenceReverse = reverse(sentence);
