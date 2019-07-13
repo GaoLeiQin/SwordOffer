@@ -10,45 +10,90 @@ package com.so;
 public class MinNumber8 {
 
     /**
-     * 获取旋转数组中的最小值
+     * 解法一：二分查找（寻找变化点）
+     * 时间复杂度：O(log n)，空间复杂度：O(1)
+     *
      * @param array
      * @return
      */
-    public static Integer minInReversingList(int[] array) {
-        if (array == null)
-            return null;
+    public static int minInReversingList(int[] array) {
+        if (array == null || array.length == 0) {
+            return -1;
+        }
+        if (array.length == 1 || array[array.length - 1] > array[0]) {
+            return array[0];
+        }
 
-        int leftIndex = 0;
-        int rightIndex = array.length - 1;
-        int mid = 1;
-
-        while (array[leftIndex] >= array[rightIndex]) {
-            //如果数组只有一个或两个元素
-            if(rightIndex - leftIndex <= 1) {
-                mid = rightIndex;
-                break;
+        int left = 0;
+        int right = array.length - 1;
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (array[mid] > array[mid + 1]) {
+                return array[mid + 1];
+            }
+            if (array[mid - 1] > array[mid]) {
+                return array[mid];
             }
 
-            mid = (leftIndex + rightIndex) / 2;
-
-            if (array[leftIndex] == array[rightIndex] && array[leftIndex] == array[mid]) {
-                if(array[leftIndex+1] != array[rightIndex-1]) {
-                    mid = array[leftIndex+1] < array[rightIndex-1] ? leftIndex+1 : rightIndex-1;
-                    break;
-                } else {
-                    leftIndex++;
-                    rightIndex--;
-                }
+            if (array[mid] > array[0]) {
+                left = mid + 1;
             } else {
-                if(array[mid] >= array[leftIndex])
-                    leftIndex = mid;
-                else {
-                    if(array[mid] <= array[rightIndex])
-                        rightIndex = mid;
-                }
+                right = mid - 1;
             }
         }
 
-        return array[mid];
+        return -1;
+    }
+
+    /**
+     * 解法二：二分查找（最左下标）
+     * 时间复杂度：O(log n)，空间复杂度：O(1)
+     *
+     * @param nums
+     * @return
+     */
+    public int minInReversingList2(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] > nums[right]) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return nums[left];
+    }
+
+    /**
+     * 第8.1题：若非递减排序数组中有重复元素，求最小元素
+     * 时间复杂度：O(log n)，空间复杂度：O(1)
+     *
+     * @param nums
+     * @return
+     */
+    public int findMin(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] > nums[right]) {
+                left = mid + 1;
+            } else if (nums[mid] < nums[right]) {
+                right = mid;
+            } else {
+                right--;
+            }
+        }
+        return nums[left];
     }
 }
