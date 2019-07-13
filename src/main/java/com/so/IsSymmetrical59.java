@@ -1,5 +1,9 @@
 package com.so;
 
+import com.so.Common.TreeNode;
+
+import java.util.Stack;
+
 /**
  * 第59题
  * 判断二叉树是否是对称的
@@ -8,19 +12,6 @@ package com.so;
  * @date 2017/08/30
  */
 public class IsSymmetrical59 {
-    /**
-     * 二叉树
-     */
-    static class TreeNode {
-        int val = 0;
-        TreeNode left = null;
-        TreeNode right = null;
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
-
-    }
 
     /**
      * 判断二叉树是不是对称的
@@ -38,13 +29,45 @@ public class IsSymmetrical59 {
      * @return
      */
     public static boolean isCommon(TreeNode leftNode, TreeNode rightNode) {
-        if (leftNode == null && rightNode == null)
+        if (leftNode == null && rightNode == null) {
             return true;
+        }
+        if (leftNode == null || rightNode == null) {
+            return false;
+        }
 
-        if (leftNode != null && rightNode != null)
-            return leftNode.val == rightNode.val &&
-                    isCommon(leftNode.left,rightNode.right) &&
-                    isCommon(leftNode.right,rightNode.left);
-        return false;
+        return leftNode.val == rightNode.val && isCommon(leftNode.left,rightNode.right) && isCommon(leftNode.right,rightNode.left);
     }
+
+    /**
+     * 解法二：迭代
+     * 时间复杂度：O(n)，空间复杂度：O(n)
+     *
+     * @param root
+     * @return
+     */
+    public static boolean isSymmetric2(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        stack.push(root);
+        while (!stack.isEmpty()) {
+            TreeNode t1 = stack.pop();
+            TreeNode t2 = stack.pop();
+            if (t1 == null && t2 == null) {
+                continue;
+            }
+            if (t1 == null || t2 == null) {
+                return false;
+            }
+            if (t1.val != t2.val) {
+                return false;
+            }
+            stack.push(t1.left);
+            stack.push(t2.right);
+            stack.push(t1.right);
+            stack.push(t2.left);
+        }
+        return true;
+    }
+    
 }

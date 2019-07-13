@@ -1,6 +1,7 @@
 package com.so;
 
 import org.junit.Test;
+import com.so.Common.TreeNode;
 
 /**
  * 第59题
@@ -13,13 +14,13 @@ public class Test59 {
 
     @Test
     public void test59() throws Exception {
-        IsSymmetrical59.TreeNode root = new IsSymmetrical59.TreeNode(8);
-        IsSymmetrical59.TreeNode node1 = new IsSymmetrical59.TreeNode(5);
-        IsSymmetrical59.TreeNode node2 = new IsSymmetrical59.TreeNode(5);
-        IsSymmetrical59.TreeNode node3 = new IsSymmetrical59.TreeNode(9);
-        IsSymmetrical59.TreeNode node4 = new IsSymmetrical59.TreeNode(2);
-        IsSymmetrical59.TreeNode node5 = new IsSymmetrical59.TreeNode(2);
-        IsSymmetrical59.TreeNode node6 = new IsSymmetrical59.TreeNode(9);
+        TreeNode root = new TreeNode(8);
+        TreeNode node1 = new TreeNode(5);
+        TreeNode node2 = new TreeNode(5);
+        TreeNode node3 = new TreeNode(9);
+        TreeNode node4 = new TreeNode(2);
+        TreeNode node5 = new TreeNode(2);
+        TreeNode node6 = new TreeNode(9);
         root.left = node1;
         root.right = node2;
         node1.left = node3;
