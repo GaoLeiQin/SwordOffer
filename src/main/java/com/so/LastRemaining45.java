@@ -45,6 +45,7 @@ public class LastRemaining45 {
         }
         int last = 0;
         for (int i = 2; i <= n; i ++) {
+            // i个人时删除数的索引等于i-1个人时删除数的索引+k(再对i取余)
             last = (last + m) % i;
         }
         return last;
