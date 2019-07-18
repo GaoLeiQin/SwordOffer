@@ -1,6 +1,7 @@
 package com.so;
 
 import org.junit.Test;
+import com.so.Common.TreeNode;
 
 /**
  * 第61题
@@ -13,13 +14,13 @@ public class Test61 {
 
     @Test
     public void test61() throws Exception {
-        LevelPrintTree61.TreeNode root = new LevelPrintTree61.TreeNode(7);
-        LevelPrintTree61.TreeNode node1 = new LevelPrintTree61.TreeNode(5);
-        LevelPrintTree61.TreeNode node2 = new LevelPrintTree61.TreeNode(8);
-        LevelPrintTree61.TreeNode node3 = new LevelPrintTree61.TreeNode(3);
-        LevelPrintTree61.TreeNode node4 = new LevelPrintTree61.TreeNode(6);
-        LevelPrintTree61.TreeNode node5 = new LevelPrintTree61.TreeNode(9);
-        LevelPrintTree61.TreeNode node6 = new LevelPrintTree61.TreeNode(11);
+        TreeNode root = new TreeNode(7);
+        TreeNode node1 = new TreeNode(5);
+        TreeNode node2 = new TreeNode(8);
+        TreeNode node3 = new TreeNode(3);
+        TreeNode node4 = new TreeNode(6);
+        TreeNode node5 = new TreeNode(9);
+        TreeNode node6 = new TreeNode(11);
         root.left = node1;
         root.right = node2;
         node1.left = node3;
