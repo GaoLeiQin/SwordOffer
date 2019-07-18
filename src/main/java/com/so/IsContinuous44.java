@@ -30,12 +30,11 @@ public class IsContinuous44 {
                 count++;
                 continue;
             }
-
-            if (numbers[i] != numbers[i+1]) {
-                diff += numbers[i+1] - numbers[i] - 1;
-            } else {
+            if (numbers[i] == numbers[i+1]) {
                 return false;
             }
+
+            diff += numbers[i+1] - numbers[i] - 1;
         }
 
         return diff <= count;
