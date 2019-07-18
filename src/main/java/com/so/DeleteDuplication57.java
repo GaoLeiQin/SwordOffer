@@ -22,11 +22,11 @@ public class DeleteDuplication57 {
             return null;
         }
         // 新建一个节点，防止头结点被删除
-        ListNode first = new ListNode(-1);
-        first.next = pHead;
+        ListNode dummy = new ListNode(-1);
+        dummy.next = pHead;
         ListNode p = pHead;
         // 指向前一个节点
-        ListNode preNode = first;
+        ListNode preNode = dummy;
 
         while (p != null && p.next != null) {
             if (p.val == p.next.val) {
@@ -43,6 +43,6 @@ public class DeleteDuplication57 {
                 p = p.next;
             }
         }
-        return first.next;
+        return dummy.next;
     }
 }
