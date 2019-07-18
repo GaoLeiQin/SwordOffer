@@ -1,6 +1,7 @@
 package com.so;
 
 import org.junit.Test;
+import com.so.Common.TreeNode;
 
 /**
  * 第60题
@@ -13,13 +14,13 @@ public class Test60 {
 
     @Test
     public void test60() throws Exception {
-        ZTreePrint60.TreeNode root = new ZTreePrint60.TreeNode(7);
-        ZTreePrint60.TreeNode node1 = new ZTreePrint60.TreeNode(5);
-        ZTreePrint60.TreeNode node2 = new ZTreePrint60.TreeNode(8);
-        ZTreePrint60.TreeNode node3 = new ZTreePrint60.TreeNode(3);
-        ZTreePrint60.TreeNode node4 = new ZTreePrint60.TreeNode(6);
-        ZTreePrint60.TreeNode node5 = new ZTreePrint60.TreeNode(9);
-        ZTreePrint60.TreeNode node6 = new ZTreePrint60.TreeNode(11);
+        TreeNode root = new TreeNode(7);
+        TreeNode node1 = new TreeNode(5);
+        TreeNode node2 = new TreeNode(8);
+        TreeNode node3 = new TreeNode(3);
+        TreeNode node4 = new TreeNode(6);
+        TreeNode node5 = new TreeNode(9);
+        TreeNode node6 = new TreeNode(11);
         root.left = node1;
         root.right = node2;
         node1.left = node3;
