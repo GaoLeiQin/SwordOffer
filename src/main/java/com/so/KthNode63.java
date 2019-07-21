@@ -1,6 +1,6 @@
 package com.so;
 
-import com.so.LevelPrintTree61.TreeNode;
+import com.so.Common.TreeNode;
 
 import java.util.Stack;
 
@@ -12,44 +12,28 @@ import java.util.Stack;
  * @date 2017/08/30
  */
 public class KthNode63 {
-
-    private static int count = 0;
-
     /**
-     * 查找第k小的结点
+     * 解法一：递归
      *
      * @param pRoot
      * @param k
      * @return
      */
-    public static TreeNode getKthNode1(TreeNode pRoot, int k) {
-        if (pRoot == null || k == 0) {
+    private int count = 0;
+    public TreeNode KthNode(TreeNode pRoot, int k) {
+        if(pRoot == null) {
             return null;
         }
-        count = k;
-        return KthNode(pRoot);
-    }
-
-    /**
-     * 解法一：递归查找
-     *
-     * @param root
-     * @return
-     */
-    public static TreeNode KthNode(TreeNode root) {
-        TreeNode t = null;
-        if (root.left != null) {
-            t = KthNode(root.left);
+        TreeNode node = KthNode(pRoot.left, k);
+        if(node != null) {
+            return node;
         }
-        if (t == null && count == 1) {
-            t = root;
-        } else {
-            count--;
+        count++;
+        if(count == k) {
+            return pRoot;
         }
-        if (t == null && root.right != null) {
-            t = KthNode(root.right);
-        }
-        return t;
+        node = KthNode(pRoot.right, k);
+        return node;
     }
 
     /**
@@ -59,7 +43,7 @@ public class KthNode63 {
      * @param k
      * @return
      */
-    public static TreeNode getKthNode2(TreeNode pRoot, int k) {
+    public TreeNode getKthNode2(TreeNode pRoot, int k) {
         if (pRoot == null || k < 1) {
             return null;
         }

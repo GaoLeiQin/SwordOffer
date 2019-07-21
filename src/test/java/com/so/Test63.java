@@ -1,6 +1,6 @@
 package com.so;
 
-import com.so.LevelPrintTree61.TreeNode;
+import com.so.Common.TreeNode;
 import org.junit.Test;
 
 /**
@@ -28,8 +28,9 @@ public class Test63 {
         node2.left = node5;
         node2.right = node6;
 
+        KthNode63 kthNode63 = new KthNode63();
         int k = 3;
-        System.out.println("解法一：递归查找：" + KthNode63.getKthNode1(root, k).val);
-        System.out.println("解法二：非递归，借用栈查找：" + KthNode63.getKthNode2(root, k).val);
+        System.out.println("解法一：递归查找：" + kthNode63.KthNode(root, k).val);
+        System.out.println("解法二：非递归，借用栈查找：" + kthNode63.getKthNode2(root, k).val);
     }
 }
