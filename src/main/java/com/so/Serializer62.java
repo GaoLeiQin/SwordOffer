@@ -1,6 +1,6 @@
 package com.so;
 
-import com.so.LevelPrintTree61.TreeNode;
+import com.so.Common.TreeNode;
 
 /**
  * 第62题
