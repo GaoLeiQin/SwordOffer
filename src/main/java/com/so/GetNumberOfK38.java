@@ -28,9 +28,9 @@ public class GetNumberOfK38 {
         int mid = arraySorted.length / 2;
 
         if (k < arraySorted[mid]) {
-            result += getNumberOfK(Arrays.copyOfRange(arraySorted, 0, mid), k);
+            getNumberOfK(Arrays.copyOfRange(arraySorted, 0, mid), k);
         } else if (k > arraySorted[mid]) {
-            result += getNumberOfK(Arrays.copyOfRange(arraySorted, mid, arraySorted.length), k);
+            getNumberOfK(Arrays.copyOfRange(arraySorted, mid, arraySorted.length), k);
         } else {
             result += getCount(arraySorted, mid);
         }
