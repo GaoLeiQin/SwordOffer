@@ -16,6 +16,7 @@ public class Duplicate51 {
      *
      * @param numbers
      * @return
+     *
      */
     public static Integer duplicate1(int numbers[]) {
         if (numbers == null || numbers.length == 0) {
